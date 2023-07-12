@@ -1,59 +1,76 @@
-# Personal Website React
+## Portfolio Website For Developers 💯
 
-[![Screenshot](/public/social-image.png?raw=true)](https://jolienhoop.com)
+**UPDATE:**
 
-[![Website jolienhoop.com](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://jolienhoop.com)
-[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/JoHoop/personal-website-react/blob/master/LICENSE)
-[![GitHub contributors](https://img.shields.io/github/contributors/JoHoop/personal-website-react.svg)](https://github.com/JoHoop/personal-website-react/graphs/contributors/)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/JoHoop/personal-website-react/graphs/commit-activity)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com)
 
-A clean, responsive, single-page webapp template for developers. View demo at [jolienhoop.com](https://jolienhoop.com)
+1. Wrote a detailed blog on [freeCodeCamp](https://www.freecodecamp.org/news/how-to-build-a-portfolio-site-with-nextjs-tailwindcss/), describing and explaining how I built this application from the ground up.
 
--   built using [React](https://reactjs.org/)
--   bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
--   styled with [Material-UI](https://material-ui.com/)
--   deployed with [Vercel](https://vercel.com) and hosted at [jolienhoop.com](https://jolienhoop.com)
+2. Included the `constants` folder, where you can directly add your details and it'll get reflected throughout the application. No more customizations for the template required, just add your data and it'll reflect immediately.
 
-Kudos to [Cody Bennett](https://github.com/CodyJasonBennett), [José Coelho](https://github.com/jcoelho93) and [Brittany Chiang](https://github.com/bchiang7) for the inspiration.
+Portfolio for developers is a simple and minimalistic website to showcase your skills and projects as a developer. The design is inspired by [Kevin Clark](https://kevinclark.ca). The website is completely Open Source, you can use it for whatever purpose you want.
 
-## Features
+![HomeGif](https://github.com/manuarora700/simple-developer-portfolio-website/blob/main/demo-images/websitegif.gif)
 
--   All of the personal information is populated from the resume.json file following the [JSON Resume](https://jsonresume.org/) standard, a community driven open source initiative to create a JSON based standard for resumes. Discover the official schema [here](https://jsonresume.org/schema/).
--   The toggle/switch for the dark mode syncs its state to the local storage.
+# Features
 
-#### Coming soon
+- Responsive layout, works well on both Mobile and Desktop
+- Dark mode support. Click buttons to toggle dark mode and light mode.
+- Clear React components and tailwind styling.
+- Exact sections that a developer needs to showcase their skills.
+- Clear call to actions.
 
--   Two beautiful resume page templates generated based on the data in the resume.json file -- a modern approach of the traditional printed CV.
--   Rich Google search results using structured data with [json-ld.org/](https://json-ld.org/).
+# Pages
 
-## Customization
+I've kept the pages as simple as possible. Only the required sections are included with minimal content.
 
-Feel free to fork this project and customize it with your own information and style.
+## Landing
 
-Refer to the [Material UI docs](https://material-ui.com/customization/theming/) for guidance on how to quickly customize the themes, components and colors to suit your tastes.
+![Hompage](https://github.com/manuarora700/simple-developer-portfolio-website/blob/main/demo-images/home.png)
 
-If you improve the app in any way a pull request would be very much appreciated ✌️
+## About
 
-## Available Scripts
+![Hompage](https://github.com/manuarora700/simple-developer-portfolio-website/blob/main/demo-images/about.png)
 
-In the project directory, you can run:
+## Projects
 
-### `npm install`
+![Hompage](https://github.com/manuarora700/simple-developer-portfolio-website/blob/main/demo-images/projects.png)
 
-to install the dependencies.
+## Experience
 
-### `npm start`
+![Hompage](https://github.com/manuarora700/simple-developer-portfolio-website/blob/main/demo-images/experience.png)
 
-to run the app in the development mode at [http://localhost:3000](http://localhost:3000)<br />
+## Contact
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+![Hompage](https://github.com/manuarora700/simple-developer-portfolio-website/blob/main/demo-images/contact.png)
 
-### `npm run build`
+# Tech Stack
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The website is built in my favourite Tech Stack and deployed on [Vercel](https://vercel.com)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- [Next.js](https://nextjs.org) for building React Components.
+- [tailwindcss](https://tailwindcss.com) for styling.
+- [React Rough Notation](https://roughnotation.com) for Hero section highlighting.
+- [Vercel](https://vercel.com) for deployments and CI/CD.
+
+# Usage
+
+- Clone the repository using `git clone https://github.com/manuarora700/simple-developer-portfolio-website.git`
+- Install all the modules by using `npm i` or `npm install` or `yarn`
+- Run the local development server by using `npm run dev` or `yarn dev`
+- Make the required edits and deploy to YOUR GitHub repo for CI/CD.
+
+# Deployment
+
+Deployment can be done in 3 easy steps.
+
+- Login to [Vercel](https://vercel.com) or signup for an account if you don't have one.
+- Create a `New Project` and select YOUR GitHub repository of the portfolio project.
+- Wait for Vercel to deploy your project to production.
+
+# License
+
+This template is completely open source and free to use. Use it for client projects or your own portfolio project. Give me credits at the footer (If you wish, it'll help me a lot :)).
+
+# Support
+
+<a href="https://www.buymeacoffee.com/manuarora" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
