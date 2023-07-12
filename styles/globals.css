@@ -16,6 +16,11 @@ a {
   text-decoration: none;
 }
 
+a:hover{
+  scale: 1.2;
+  transition: 100ms linear
+}
+
 * {
   box-sizing: border-box;
 }
