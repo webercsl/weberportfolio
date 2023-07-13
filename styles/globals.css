@@ -24,3 +24,24 @@ a:hover{
 * {
   box-sizing: border-box;
 }
+
+.scroll-to-top-button {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  padding: 10px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.scroll-to-top-button.visible {
+  display: block;
+}
+
+.scroll-to-top-button:hover {
+  scale: 1.2;
+}

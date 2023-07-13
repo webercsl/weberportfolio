@@ -7,7 +7,7 @@ export default function Contact() {
 
   return (
     <section>
-      <div className="max-w-6xl mx-auto h-40 bg-white dark:bg-gray-800 antialiased">
+      <div className="max-w-6xl mx-auto h-40 bg-gray-100 dark:bg-gray-900 antialiased">
         <h1 className=" text-3xl md:text-7xl font-bold py-0 text-center md:text-left">
           Contact
         </h1>

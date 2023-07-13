@@ -1,6 +1,4 @@
-import React, { useEffect, useState } from "react";
-import Link from "next/link";
-import getLatestRepos from "@lib/getLatestRepos";
+import React, { useState } from "react";
 import userData from "@constants/data";
 
 export default function LatestCode({ repositories }) {
@@ -17,6 +15,7 @@ export default function LatestCode({ repositories }) {
           <a
             href={`https://github.com/${userData.githubUsername}`}
             className="mb-20 md:mb-0 px-8 py-4 rounded-md bg-white shadow-lg text-xl font-semibold flex flex-row space-x-4 items-center dark:text-gray-700"
+            target="_blank"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +37,6 @@ export default function LatestCode({ repositories }) {
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto px-10 lg:-mt-10 gap-y-20">
-        {/* Single github Repo */}
 
         {repos &&
           repos.map((latestRepo, idx) => (

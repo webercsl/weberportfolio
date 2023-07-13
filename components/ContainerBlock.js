@@ -3,6 +3,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import ScrollToTopButton from "./ScrollBackToTop";
 
 export default function ContainerBlock({ children, ...customMeta }) {
   const router = useRouter();
@@ -10,7 +11,7 @@ export default function ContainerBlock({ children, ...customMeta }) {
   const meta = {
     title: "Gustavo Weber - Web Developer",
     description: `From Mechanic to Computer.`,
-    image: "/avatar.png",
+    image: "/profile.jpeg",
     type: "website",
     ...customMeta,
   };
@@ -35,10 +36,11 @@ export default function ContainerBlock({ children, ...customMeta }) {
           <meta property="article:published_time" content={meta.date} />
         )}
       </Head>
-      <main className="dark:bg-gray-900 w-full overflow-auto min-h-[100vh]">
+      <main className="bg-gray-100 dark:bg-gray-900 w-full overflow-auto min-h-[100vh]">
         <Navbar />
         <div>{children}</div>
         <Footer />
+        <ScrollToTopButton />
       </main>
     </div>
   );

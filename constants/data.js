@@ -50,13 +50,12 @@ const userData = {
   ],
   about: {
     title:
-      "I'm a software developer that loves building products and web applications that impact millions of lives",
+      "I'm a web developer that just want to work",
     description: [
-      `I've been developing full-stack application since I was 10 years old. I didn't know what full-stack meant at that time because the term was not coined back then. I'm so out of content right now that I'm literally crying writing this text since lorem text is so 2012 now.`,
-      `After learning HTML and struggling with CSS, I came up with a brilliant idea of using bootstrap so that I don't have to style everything by myself and - for obvious reasons - if you knew bootstrap, you were cool.`,
+      `Started working and the college in 2017, i was doing Mechanic Engineer, and until August 2022, i worked just with that (Mechanic), so i resolved to change.`,
+      `I've been developing since August 2022. I've a lot to know about all the areas than i can follow in computer engineer, but for now, i'm making websites, and are loving that.`,
+      `Always studding, my learning curve it's always growing. I started learning HTML and struggling with CSS, after starting Javascript, so now deepening in React and Next.`,
     ],
-    currentProject: "Tailwind Master Kit",
-    currentProjectUrl: "https://tailwindmasterkit.com",
   },
   experience: [
     {
@@ -95,8 +94,6 @@ const userData = {
       desc: "In this season, i was just thinking in be a football player",
     },
   ],
-  resumeUrl:
-    "https://drive.google.com/file/d/1xmE3BOmgM7TAOOgVp36xQIQvYDntDYoo/view?usp=sharing",
   socialLinks: {
     instagram: "https://instagram.com/webercsl1",
     twitter: "https://twitter.com/GustavoWeber9",

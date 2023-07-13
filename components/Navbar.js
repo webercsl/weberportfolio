@@ -7,19 +7,23 @@ import Image from "next/image"
 
 export default function Navbar() {
   const router = useRouter();
-  console.log(router.asPath);
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
+  const [isMenuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
+  const toggleMenu = () => {
+    setMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <div className="max-w-6xl mx-auto px-4 py-10 md:py-10">
+    <div className="max-w-6xl mx-auto px-4 py-4 md:py-10">
       <div className="flex md:flex-row justify-between items-center">
         <Link href="/" className="flex items-center">
-          <Image src="/profile.jpg" width={50} height={50} alt="profile" className="rounded-full" />
+          <Image src="/profile.jpeg" width={60} height={60} alt="profile" className="rounded-full" />
           <div className="ml-4">
             <h1 className="font-semibold text-xl dark:text-gray-100">
               {userData.name}
@@ -29,7 +33,6 @@ export default function Navbar() {
             </p>
           </div>
         </Link>
-
 
         <div className="space-x-8 hidden md:block">
           <Link
@@ -231,38 +234,55 @@ export default function Navbar() {
           </button>
         </div>
       </div>
-      <div className="space-x-8 block md:hidden mt-4">
-        <Link
-          href="/"
-          className="text-base font-normal text-gray-600 dark:text-gray-300"
-        >
-          Home
-        </Link>
-        <Link
-          href="/about"
-          className="text-base font-normal text-gray-600 dark:text-gray-300"
-        >
-          About
-        </Link>
-        <Link
-          href="/projects"
-          className="text-base font-normal text-gray-600 dark:text-gray-300"
-        >
-          Projects
-        </Link>
-        <Link
-          href="/experience"
-          className="text-base font-normal text-gray-600 dark:text-gray-300"
-        >
-          Experience
-        </Link>
-        <Link
-          href="/contact"
-          className="text-base font-normal text-gray-600 dark:text-gray-300"
-        >
-          Contact
-        </Link>
-      </div>
+      <nav className={`md:hidden py-8 flex flex-col w-full ${isMenuOpen ? "fixed top-0 left-0 h-screen w-screen bg-gray-500 bg-opacity-90 z-10" : ""}`}>
+        {isMenuOpen ? (
+          <div className="flex justify-end pr-8 py-16">
+            <button className="toggle-button" onClick={toggleMenu}>
+              <Image src="/sidebarclosed.svg" alt="closesidebar" width={40} height={40}/>
+            </button>
+          </div>
+        ) : (
+          <button className="toggle-button" onClick={toggleMenu}>
+            <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20 7L4 7" stroke="#919191" stroke-width="1.5" stroke-linecap="round"></path> <path d="M20 12L4 12" stroke="#919191" stroke-width="1.5" stroke-linecap="round"></path> <path d="M20 17L4 17" stroke="#919191" stroke-width="1.5" stroke-linecap="round"></path> </g></svg>
+          </button>
+        )}
+        {isMenuOpen && (
+          <div className="flex flex-col w-full items-center gap-20">
+            <Link
+              href="/"
+              className="text-5xl font-bold text-black dark:text-black w-60 text-center"
+            >
+              Home
+            </Link>
+            <Link
+              href="/about"
+              className="text-5xl font-bold text-black dark:text-black w-60 text-center"
+            >
+              About
+            </Link>
+            <Link
+              href="/projects"
+              className="text-5xl font-bold text-black dark:text-black w-60 text-center"
+            >
+              Projects
+            </Link>
+            <Link
+              href="/experience"
+              className="text-5xl font-bold text-black dark:text-black w-60 text-center"
+            >
+              Experience
+            </Link>
+            <Link
+              href="/contact"
+              className="text-5xl font-bold text-black dark:text-black w-60 text-center"
+            >
+              Contact
+            </Link>
+          </div>
+        )}
+      </nav>
     </div>
   );
 }
+
+
