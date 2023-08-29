@@ -84,6 +84,7 @@ export default function Contact() {
               <a
                 href={userData.socialLinks.facebook}
                 className="h-10 w-10 rounded-full hover:bg-blue-700 flex items-center justify-center cursor-pointer"
+                target="_blank"
               >
                 <svg
                   width="24"
@@ -102,6 +103,7 @@ export default function Contact() {
               <a
                 href={userData.socialLinks.twitter}
                 className="h-10 w-10 rounded-full hover:bg-blue-500 flex items-center justify-center cursor-pointer"
+                target="_blank"
               >
                 <svg
                   width="24"
@@ -122,6 +124,7 @@ export default function Contact() {
               <a
                 href={userData.socialLinks.instagram}
                 className="h-10 w-10 rounded-full hover:bg-gradient-to-br from-purple-500 via-pink-500 to-red-500 flex items-center justify-center cursor-pointer"
+                target="_blank"
               >
                 <svg
                   width="24"
@@ -152,6 +155,7 @@ export default function Contact() {
               <a
                 href={userData.socialLinks.github}
                 className="h-10 w-10 rounded-full hover:bg-gray-300 flex items-center justify-center cursor-pointer"
+                target="_blank"
               >
                 <svg
                   width="24"

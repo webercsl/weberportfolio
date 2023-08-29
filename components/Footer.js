@@ -28,6 +28,7 @@ export default function Footer() {
             <a
               href={userData.socialLinks.instagram}
               className="text-base font-normal text-gray-600 dark:text-gray-300"
+              target="_blank"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -43,6 +44,7 @@ export default function Footer() {
             <a
               href={userData.socialLinks.twitter}
               className="text-base font-normal text-gray-600 dark:text-gray-300"
+              target="_blank"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -58,6 +60,7 @@ export default function Footer() {
             <a
               href={userData.socialLinks.linkedin}
               className="text-base font-normal text-gray-600 dark:text-gray-300"
+              target="_blank"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

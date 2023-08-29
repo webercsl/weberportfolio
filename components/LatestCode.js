@@ -51,7 +51,8 @@ const GithubRepoCard = ({ latestRepo }) => {
   return (
     <a 
     href={latestRepo.clone_url}
-    className="github-repo border border-white p-4 rounded-lg hover:bg-blue-900">
+    className="github-repo border border-white p-4 rounded-lg hover:bg-blue-900"
+    target="_blank">
       <h1 className="font-semibold text-xl dark:text-gray-200 text-gray-700">
         {latestRepo.name}
       </h1>

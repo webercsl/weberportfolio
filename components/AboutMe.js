@@ -31,6 +31,7 @@ export default function AboutMe() {
                 <a
                   href={userData.socialLinks.facebook}
                   className="flex flex-row items-center space-x-4 group"
+                  target="_blank"
                 >
                   <div className="my-2">&rarr;</div>
                   <div className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
@@ -43,6 +44,7 @@ export default function AboutMe() {
                 <a
                   href={userData.socialLinks.twitter}
                   className="flex flex-row items-center space-x-4 group"
+                  target="_blank"
                 >
                   <div className="my-2">&rarr;</div>
                   <div className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
@@ -55,6 +57,7 @@ export default function AboutMe() {
                 <a
                   href={userData.socialLinks.github}
                   className="flex flex-row items-center space-x-4 group"
+                  target="_blank"
                 >
                   <div className="my-2">&rarr;</div>
                   <div className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
@@ -67,6 +70,7 @@ export default function AboutMe() {
                 <a
                   href={userData.socialLinks.linkedin}
                   className="flex flex-row items-center space-x-4 group"
+                  target="_blank"
                 >
                   <div className="my-2">&rarr;</div>
                   <div className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
@@ -79,6 +83,7 @@ export default function AboutMe() {
                 <a
                   href={userData.socialLinks.instagram}
                   className="flex flex-row items-center space-x-4 group"
+                  target="_blank"
                 >
                   <div className="my-2">&rarr;</div>
                   <div className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
