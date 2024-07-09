@@ -6,7 +6,7 @@ export default function AboutMe() {
     <section className="bg-gray-100 dark:bg-gray-900 mb-24">
       <div className="max-w-6xl mx-auto h-20 dark:bg-gray-900">
         <h1 className=" text-5xl md:text-6xl font-bold py-0 text-center md:text-left">
-          About Me.
+          Sobre mim.
         </h1>
       </div>
       <div className="bg-[#F1F1F1] dark:bg-gray-900 px-4">
