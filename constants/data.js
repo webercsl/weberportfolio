@@ -8,44 +8,19 @@ const userData = {
   address: "Caxias do Sul, Rio Grande do Sul, Brasil.",
   projects: [
     {
-      title: "Tailwind Master Kit",
-      link: "https://tailwindmasterkit.com",
-      imgUrl: "/tmk.jpg",
+      title: "Real-Time Internal Communication Platform",
+      link: "https://gso-comunicacao.vercel.app/",
+      imgUrl: "/chat.jpg",
     },
     {
-      title: "PlaceholderTech",
-      link: "https://placeholdertech.in",
-      imgUrl: "/placeholdertech.png",
+      title: "Project Management",
+      link: "https://gso-comunicacao.vercel.app/",
+      imgUrl: "/tarefas.jpg",
     },
     {
-      title: "Portfolio",
-      link: "https://manuarora.in",
-      imgUrl: "/portfolio.png",
-    },
-    {
-      title: "CovidRescue",
-      link: "https://covidrescue.co.in",
-      imgUrl: "/covidrescue.png",
-    },
-    {
-      title: "Algochurn",
-      link: "https://algochurn.com",
-      imgUrl: "/algochurn.png",
-    },
-    {
-      title: "Playground",
-      link: "https://play.placeholdertech.in",
-      imgUrl: "/playground.png",
-    },
-    {
-      title: "Feedmeback",
-      link: "https://feedmeback.vercel.app",
-      imgUrl: "/feedmeback.png",
-    },
-    {
-      title: "Devmedium",
-      link: "https://devmedium.vercel.app",
-      imgUrl: "/devmedium.png",
+      title: "Flag's Game",
+      link: "https://jogodabandeira.com.br/",
+      imgUrl: "/bandeira.jpg",
     },
   ],
   about: {
@@ -61,7 +36,7 @@ const userData = {
     {
       title: "Web Developer",
       company: "Serra Online",
-      year: "2023",
+      year: "2023-Actually",
       companyLink: "https://www.linkedin.com/company/grupo-serra-online/about/",
       desc: "Making websites to Car Dealerships using Javascript, with React, Next, MySQL and AWS",
     },
