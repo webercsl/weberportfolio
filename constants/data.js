@@ -1,7 +1,7 @@
 const userData = {
   githubUsername: "webercsl",
   name: "Gustavo Weber",
-  designation: "Web Developer",
+  designation: "Fullstack Developer",
   avatarUrl: "/avatar.png",
   email: "weber1.caxias@gmail.com",
   phone: "+55 54 98144-0541",
